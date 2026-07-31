@@ -3,73 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer | Portfolio</title>
+    <title>Alex Rivera | Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in modern web applications, React, Node.js, and cloud architecture.">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="bg-grid"></div>
-    <div class="bg-glow"></div>
-
-    <nav>
-        <a href="index.html" class="logo">DEV<span>PORTFOLIO</span></a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">AR<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-content">
-                <span class="hero-subtitle">Full-Stack Engineer</span>
-                <h1>Building High-Performance <span>Web Systems</span></h1>
-                <p>Specializing in scalable .NET Core Web APIs, distributed backends, and modern Next.js interfaces.</p>
-                <a href="#projects" class="btn btn-primary">View Featured Projects</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Alex Rivera<span>.</span></h1>
+                <h2 class="title">I build exceptional digital experiences.</h2>
+                <p class="description">
+                    I'm a Full Stack Developer specializing in building (and occasionally designing) 
+                    outstanding digital experiences. Currently focused on building accessible, 
+                    human-centered products.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-        </section>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content">
+<span class="keyword">const</span> developer = {
+  name: <span class="string">"Alex Rivera"</span>,
+  role: <span class="string">"Full Stack Developer"</span>,
+  skills: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>],
+  passion: <span class="string">"Building the future"</span>,
+  available: <span class="boolean">true</span>
+};</pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-        <!-- Projects Grid -->
-        <section id="projects" style="padding: 4rem 0;">
-            <h2 class="section-title">Featured <span>Architecture</span></h2>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title"><span>01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Alex, a passionate Full Stack Developer based in San Francisco. 
+                        I enjoy creating things that live on the internet, whether that be websites, 
+                        applications, or anything in between.
+                    </p>
+                    <p>
+                        My interest in web development started back in 2018 when I decided to try 
+                        editing custom Tumblr themes — turns out hacking together a custom reblog 
+                        button taught me a lot about HTML & CSS!
+                    </p>
+                    <p>
+                        Fast-forward to today, and I've had the privilege of working at 
+                        <strong>an advertising agency</strong>, <strong>a start-up</strong>, 
+                        <strong>a huge corporation</strong>, and <strong>a student-led design studio</strong>.
+                    </p>
+                    <p>Here are a few technologies I've been working with recently:</p>
+                    <ul class="tech-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>React & Next.js</li>
+                        <li>Node.js & Express</li>
+                        <li>PostgreSQL & MongoDB</li>
+                        <li>AWS & Docker</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span>AR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span>02.</span> Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React / Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Redux / Zustand</li>
+                        <li>Framer Motion</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js / Express</li>
+                        <li>Python / FastAPI</li>
+                        <li>GraphQL / REST</li>
+                        <li>PostgreSQL / MongoDB</li>
+                        <li>Redis / Prisma</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>AWS / Vercel</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Terraform</li>
+                        <li>Linux / Nginx</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Other</h3>
+                    <ul>
+                        <li>System Design</li>
+                        <li>Testing (Jest, Cypress)</li>
+                        <li>Agile / Scrum</li>
+                        <li>UI/UX Principles</li>
+                        <li>Technical Writing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><span>03.</span> Featured Projects</h2>
             
-            <div class="project-grid">
-                
-                <!-- Project 1 -->
-                <a href="projects/hospital-ms.html" class="card">
-                    <h3>Hospital Management System</h3>
-                    <p>Enterprise .NET Core Web API handling administration workflows, patient schedules, and tokenized security.</p>
-                    <div class="tags">
-                        <span class="tag">.NET Core</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">REST API</span>
-                        <span class="tag">SQL Server</span>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">E-Commerce Platform</div>
+                </div>
+                <div class="project-content">
+                    <p class="project-label">Featured Project</p>
+                    <h3>Nexus Commerce</h3>
+                    <p class="project-description">
+                        A full-featured e-commerce platform with real-time inventory, 
+                        payment integration (Stripe), and admin dashboard. Built with 
+                        performance and scalability in mind.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>Stripe</li>
+                        <li>Redis</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="GitHub">↗ Code</a>
+                        <a href="#" class="project-link" title="Live Demo">↗ Live</a>
                     </div>
-                    <div class="card-action">Explore Architecture & Screenshots <span>&rarr;</span></div>
-                </a>
-
-                <!-- Project 2 -->
-                <a href="projects/ai-generator.html" class="card">
-                    <h3>AI Content Generator</h3>
-                    <p>Full-stack solution integrating Next.js with AI APIs for dynamic presentation generation.</p>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">.NET Core</span>
-                        <span class="tag">Gamma AI API</span>
-                    </div>
-                    <div class="card-action">Explore Architecture & Screenshots <span>&rarr;</span></div>
-                </a>
-
+                </div>
             </div>
-        </section>
 
-    </div>
+            <div class="project-card reverse">
+                <div class="project-image">
+                    <div class="project-placeholder">SaaS Dashboard</div>
+                </div>
+                <div class="project-content">
+                    <p class="project-label">Featured Project</p>
+                    <h3>Pulse Analytics</h3>
+                    <p class="project-description">
+                        Real-time analytics dashboard for SaaS products. Features 
+                        interactive charts, team collaboration, and advanced filtering 
+                        with sub-second query performance.
+                    </p>
+                    <ul class="project-tech">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>GraphQL</li>
+                        <li>ClickHouse</li>
+                        <li>WebSockets</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link">↗ Code</a>
+                        <a href="#" class="project-link">↗ Live</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">AI Chat Platform</div>
+                </div>
+                <div class="project-content">
+                    <p class="project-label">Featured Project</p>
+                    <h3>Synapse AI</h3>
+                    <p class="project-description">
+                        Multi-model AI chat application with conversation memory, 
+                        document analysis, and team workspaces. Supports multiple 
+                        LLM providers with intelligent routing.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Next.js</li>
+                        <li>Python</li>
+                        <li>LangChain</li>
+                        <li>PostgreSQL</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link">↗ Code</a>
+                        <a href="#" class="project-link">↗ Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title"><span>04.</span> Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Full Stack Developer</h3>
+                        <p class="company">TechNova Inc. <span>• 2023 — Present</span></p>
+                        <ul>
+                            <li>Led development of core platform serving 50k+ daily active users</li>
+                            <li>Architected microservices reducing API latency by 40%</li>
+                            <li>Mentored 4 junior developers and established code review standards</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="company">PixelForge Studio <span>• 2021 — 2023</span></p>
+                        <ul>
+                            <li>Built and shipped 12+ client projects from concept to production</li>
+                            <li>Implemented CI/CD pipelines cutting deployment time by 60%</li>
+                            <li>Introduced TypeScript across the engineering team</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <p class="company">BrightPath Agency <span>• 2019 — 2021</span></p>
+                        <ul>
+                            <li>Developed responsive marketing sites and web applications</li>
+                            <li>Collaborated closely with designers on pixel-perfect implementations</li>
+                            <li>Optimized Core Web Vitals achieving 95+ Lighthouse scores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span>05.</span> What's Next?</h2>
+            <h3 class="contact-title">Get In Touch</h3>
+            <p class="contact-description">
+                I'm currently looking for new opportunities. Whether you have a question 
+                or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:alex.rivera@email.com" class="btn btn-primary btn-large">Say Hello</a>
+            
+            <div class="social-links">
+                <a href="#" class="social-link" title="GitHub">GitHub</a>
+                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" title="Twitter">Twitter</a>
+                <a href="#" class="social-link" title="Email">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Alex Rivera</p>
+            <p class="footer-note">© 2026 All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
