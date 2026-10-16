@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devharis-pk.github.io/sitemap.xml
